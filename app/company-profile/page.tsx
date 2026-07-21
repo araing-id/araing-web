@@ -22,20 +22,20 @@ export default function CompanyProfilePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#c084fc]/30 selection:text-purple-200">
+    <div className="min-h-screen bg-[#000000] text-white font-sans selection:bg-[#c084fc]/30 selection:text-purple-200 pb-16 md:pb-0">
       
       {/* Non-printable UI Controls */}
-      <div className="fixed top-4 right-4 z-50 flex gap-4 print:hidden">
+      <div className="fixed bottom-4 right-4 md:top-4 md:bottom-auto md:right-4 z-50 flex flex-col md:flex-row gap-3 print:hidden">
         <Link 
           href="/"
-          className="flex items-center gap-2 bg-[#1A1A1A] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition shadow-[0_0_15px_rgba(0,0,0,0.5)] border border-white/10"
+          className="flex justify-center items-center gap-2 bg-[#1A1A1A] text-white px-4 py-3 md:py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition shadow-[0_0_15px_rgba(0,0,0,0.5)] border border-white/10"
         >
           <ArrowLeft className="w-4 h-4" />
           Kembali
         </Link>
         <button 
           onClick={handlePrint}
-          className="flex items-center gap-2 bg-[#c084fc] text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-[#a64ca6] transition shadow-[0_0_20px_rgba(192,132,252,0.4)]"
+          className="flex justify-center items-center gap-2 bg-[#c084fc] text-white px-4 py-3 md:py-2 rounded-full text-sm font-bold hover:bg-[#a64ca6] transition shadow-[0_0_20px_rgba(192,132,252,0.4)]"
         >
           <Printer className="w-4 h-4" />
           Download PDF / Cetak
@@ -43,75 +43,92 @@ export default function CompanyProfilePage() {
       </div>
 
       {/* Printable Document Container */}
-      <div className="max-w-[210mm] mx-auto bg-[#111111] print:bg-white min-h-[297mm] shadow-[0_0_40px_rgba(192,132,252,0.05)] print:shadow-none print:w-full print:max-w-full text-white print:text-black">
+      <div className="w-full max-w-[210mm] mx-auto bg-[#111111] print:bg-white min-h-screen md:min-h-[297mm] shadow-[0_0_40px_rgba(192,132,252,0.05)] print:shadow-none print:w-full print:max-w-full text-white print:text-black">
         
         {/* PAGE 1: Cover & Intro */}
-        <div className="h-[297mm] flex flex-col p-16 relative overflow-hidden page-break-after-always bg-[#111111] print:bg-white">
+        <div className="h-auto min-h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] flex flex-col p-6 sm:p-10 md:p-16 print:p-16 relative overflow-hidden page-break-after-always bg-[#111111] print:bg-white">
           {/* Aesthetic Shape */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[#c084fc]/10 rounded-bl-[100px] -z-10 print:bg-transparent print:border print:border-[#c084fc]/20"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-[#c084fc]/10 rounded-bl-[100px] -z-10 print:bg-transparent print:border print:border-[#c084fc]/20"></div>
           
           <div className="mt-12 flex-shrink-0">
             {/* White logo for web, dark logo for print */}
-            <img src="/logo-araing.svg" alt="Logo" className="h-16 w-auto mb-8 filter invert brightness-0 print:hidden" style={{ filter: 'brightness(0) invert(1)' }} />
-            <img src="/logo-araing.svg" alt="Logo" className="h-16 w-auto mb-8 hidden print:block filter invert brightness-0" style={{ filter: 'brightness(0)' }} />
+            <img src="/logo-araing.svg" alt="Logo" className="h-12 md:h-16 w-auto mb-8 filter invert brightness-0 print:hidden" style={{ filter: 'brightness(0) invert(1)' }} />
+            <img src="/logo-araing.svg" alt="Logo" className="h-12 md:h-16 w-auto mb-8 hidden print:block filter invert brightness-0" style={{ filter: 'brightness(0)' }} />
             
-            <h1 className="text-6xl font-black uppercase tracking-tighter leading-none mb-4 text-white print:text-black">
+            <h1 className="text-4xl md:text-6xl print:text-6xl font-black uppercase tracking-tighter leading-none mb-4 text-white print:text-black">
               Company<br />Profile
             </h1>
-            <div className="w-20 h-2 bg-[#c084fc] mb-8 print:bg-black"></div>
-            <p className="text-2xl font-light text-white/50 max-w-md print:text-gray-500">
+            <div className="w-16 md:w-20 h-2 bg-[#c084fc] mb-8 print:bg-black"></div>
+            <p className="text-xl md:text-2xl print:text-2xl font-light text-white/50 max-w-md print:text-gray-500">
               Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
             </p>
           </div>
 
           <div className="mt-auto mb-12">
-            <h3 className="text-lg font-bold uppercase tracking-widest text-[#c084fc] mb-4 print:text-black">Mukadimah</h3>
+            <h3 className="text-base md:text-lg print:text-lg font-bold uppercase tracking-widest text-[#c084fc] mb-4 print:text-black">Mukadimah</h3>
             <p className="text-sm text-white/70 leading-relaxed text-justify print:text-gray-700">
               Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis yang lahir dari dinamika sosial merupakan modal dasar yang tak ternilai, maka diperlukan sebuah wadah yang terstruktur, profesional, dan memiliki landasan hukum yang kuat. Wadah ini bertransformasi dari sekadar lingkaran pertemanan menjadi sebuah entitas bisnis komersial yang menjunjung tinggi nilai-nilai profesionalisme tanpa sedikit pun menanggalkan semangat persaudaraan. Atas dasar kesepakatan bersama, disusunlah Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) Arus Liar Inisiatif Group sebagai pedoman fundamental, arah strategis, serta solusi resolusi dalam setiap dinamika organisasi.
             </p>
           </div>
           
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 pt-8 border-t border-white/10 md:border-none md:pt-0">
             <p className="font-bold tracking-widest uppercase text-xs text-white/90 print:text-black">Arus Liar Inisiatif Group</p>
             <p className="text-white/40 text-xs print:text-gray-500">Tahun 2026</p>
           </div>
         </div>
 
         {/* PAGE 2: Arah, Visi & Misi */}
-        <div className="h-[297mm] p-16 relative page-break-after-always flex flex-col bg-[#111111] print:bg-white">
-          <div className="mb-12">
+        <div className="h-auto min-h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] p-6 sm:p-10 md:p-16 print:p-16 relative page-break-after-always flex flex-col bg-[#111111] print:bg-white">
+          <div className="mb-8 md:mb-10 print:mb-10">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">01. Tentang Kami</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Arah Perusahaan</h3>
-            <p className="text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Arah Perusahaan</h3>
+            <p className="text-sm md:text-base print:text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
               Arah strategis perusahaan adalah bertransformasi menjadi holding company berskala nasional yang menaungi berbagai subsidiaries (anak perusahaan) di berbagai sektor. Perusahaan bertindak sebagai inkubator ide, penyedia modal, dan akselerator bisnis yang memastikan setiap sektor beroperasi secara mandiri, menguntungkan, dan memberikan dampak sosial positif bagi masyarakat Cimahi dan Indonesia.
             </p>
           </div>
 
-          <div className="mb-12">
+          <div className="mb-8 md:mb-10 print:mb-10">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">02. Landasan Filosofis</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Visi</h3>
-            <p className="text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Visi</h3>
+            <p className="text-sm md:text-base print:text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
               Menjadi perusahaan induk dan ekosistem kolaboratif lintas sektor terkemuka yang tidak hanya mendominasi konversi pasar, tetapi juga memastikan setiap anggotanya mencapai puncak kesuksesan finansial dan keahlian profesi. Hal ini bertujuan untuk mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban masyarakat, baik di dunia nyata maupun ranah digital.
             </p>
           </div>
 
-          <div className="mb-12">
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Misi</h3>
-            <ul className="list-decimal pl-5 space-y-4 text-base text-white/70 text-justify print:text-gray-700">
+          <div className="mb-8">
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Misi</h3>
+            <ul className="list-decimal pl-5 space-y-2 md:space-y-3 print:space-y-3 text-sm md:text-base print:text-base text-white/70 text-justify print:text-gray-700">
               <li>Membangun dan mengembangkan portofolio karya berstandar industri tinggi di masing-masing sektor keahlian anggota.</li>
               <li>Melakukan penetrasi dan invasi pasar secara terukur dan strategis, dengan menyeimbangkan nilai komersial (profitabilitas) dan kebermanfaatan sosial (dampak).</li>
               <li>Menerapkan tata kelola kelembagaan yang transparan, terstruktur, adaptif, dan bervaluasi tinggi untuk menjamin kemandirian finansial seluruh anggota.</li>
             </ul>
           </div>
+
+          <div className="mt-auto">
+            <h3 className="text-xl md:text-2xl print:text-2xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">5 Pilar Organisasi</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 print:grid-cols-5 gap-3">
+              {[
+                { name: "Kemandirian Finansial" },
+                { name: "Sinergi Lintas Sektor" },
+                { name: "Dampak Sosial" },
+                { name: "Inovasi Adaptif" },
+                { name: "Integritas & Persaudaraan" }
+              ].map((p, i) => (
+                <div key={i} className={`p-3 bg-white/5 border border-white/10 rounded-lg print:bg-gray-50 print:border-gray-200 flex items-center justify-center text-center ${i === 4 ? 'col-span-2 sm:col-span-1 md:col-span-1 print:col-span-1' : ''}`}>
+                  <span className="text-xs md:text-sm print:text-sm font-bold text-white print:text-black">{p.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* PAGE 3: Kemampuan & Penawaran */}
-        <div className="h-[297mm] p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
+        <div className="h-auto min-h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] p-6 sm:p-10 md:p-16 print:p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
           <div className="mb-12">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">03. Layanan Utama</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 text-white print:text-black">Sektor Keahlian</h3>
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-6 md:mb-8 print:mb-8 text-white print:text-black">Sektor Keahlian</h3>
             
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6 print:space-y-6">
               {[
                 { name: "Digital Media", info: "Pemasaran digital, kampanye kreatif, dan manajemen media sosial tingkat lanjut." },
                 { name: "Tech-X & Transformasi", info: "Konsultasi IT, pengembangan perangkat lunak, dan digitalisasi operasi bisnis." },
@@ -119,9 +136,9 @@ export default function CompanyProfilePage() {
                 { name: "Legal Advisory", info: "Pendampingan hukum perusahaan, kepatuhan regulasi, dan perizinan." },
                 { name: "Infrastructure", info: "Perencanaan dan manajemen proyek infrastruktur cerdas." },
               ].map((sector, idx) => (
-                <div key={idx} className="flex border-b border-white/10 print:border-gray-200 pb-4">
-                  <div className="w-1/3 font-bold text-lg text-white print:text-black">{sector.name}</div>
-                  <div className="w-2/3 text-white/60 text-sm leading-relaxed print:text-gray-600">{sector.info}</div>
+                <div key={idx} className="flex flex-col md:flex-row print:flex-row border-b border-white/10 print:border-gray-200 pb-4">
+                  <div className="w-full md:w-1/3 print:w-1/3 font-bold text-base md:text-lg print:text-lg text-white print:text-black mb-1 md:mb-0 print:mb-0">{sector.name}</div>
+                  <div className="w-full md:w-2/3 print:w-2/3 text-white/60 text-sm leading-relaxed print:text-gray-600">{sector.info}</div>
                 </div>
               ))}
             </div>
@@ -129,14 +146,14 @@ export default function CompanyProfilePage() {
 
           <div className="mt-auto">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">04. Nilai Tambah</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Keunggulan Kami</h3>
-            <div className="grid grid-cols-3 gap-6">
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Keunggulan Kami</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-4 md:gap-6 print:gap-6">
               {[
                 { title: "Sinergi Lintas Sektor", desc: "Pendekatan holistik yang mengintegrasikan berbagai disiplin ilmu." },
                 { title: "Keseimbangan Nilai", desc: "Menggabungkan profitabilitas komersial dengan dampak sosial nyata." },
                 { title: "Tata Kelola Adaptif", desc: "Manajemen yang transparan dan siap menghadapi dinamika zaman." }
               ].map((val, idx) => (
-                <div key={idx} className="p-5 bg-white/5 border border-white/10 rounded-xl print:bg-gray-50 print:border-gray-200">
+                <div key={idx} className="p-4 md:p-5 print:p-5 bg-white/5 border border-white/10 rounded-xl print:bg-gray-50 print:border-gray-200">
                   <h4 className="font-bold text-base mb-2 text-white print:text-black">{val.title}</h4>
                   <p className="text-xs text-white/60 leading-relaxed print:text-gray-600">{val.desc}</p>
                 </div>
@@ -146,119 +163,119 @@ export default function CompanyProfilePage() {
         </div>
 
         {/* PAGE 4: Rekam Jejak */}
-        <div className="h-[297mm] p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
-          <div className="mb-12">
+        <div className="h-auto min-h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] p-6 sm:p-10 md:p-16 print:p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
+          <div className="mb-10 md:mb-12 print:mb-12">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">05. Rekam Jejak</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Portofolio Terpilih</h3>
-            <div className="grid grid-cols-2 gap-6">
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Portofolio Terpilih</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-4 md:gap-6 print:gap-6">
               {portfolios.map((item, idx) => (
-                <div key={idx} className="p-6 border border-white/10 rounded-xl print:border-gray-200">
-                  <h4 className="font-bold text-lg mb-1 text-white print:text-black">{item.title}</h4>
+                <div key={idx} className="p-5 md:p-6 print:p-6 border border-white/10 rounded-xl print:border-gray-200">
+                  <h4 className="font-bold text-base md:text-lg print:text-lg mb-1 text-white print:text-black">{item.title}</h4>
                   <p className="text-[#c084fc] text-xs font-bold tracking-widest uppercase mb-3 print:text-gray-500">{item.client}</p>
-                  <p className="text-sm text-white/60 leading-relaxed print:text-gray-600">{item.desc}</p>
+                  <p className="text-xs md:text-sm print:text-sm text-white/60 leading-relaxed print:text-gray-600">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="mt-12">
-            <h3 className="text-xl font-bold uppercase tracking-tighter mb-6 text-white print:text-black">Klien & Mitra Strategis</h3>
-            <div className="grid grid-cols-4 gap-4 opacity-30 grayscale print:opacity-100 print:grayscale-0">
+          <div className="mb-10 md:mb-12 print:mb-12">
+            <h3 className="text-lg md:text-xl print:text-xl font-bold uppercase tracking-tighter mb-4 md:mb-6 print:mb-6 text-white print:text-black">Klien & Mitra Strategis</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 print:grid-cols-4 gap-3 md:gap-4 print:gap-4 opacity-30 grayscale print:opacity-100 print:grayscale-0">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                <div key={num} className="h-16 bg-white/10 rounded-lg flex items-center justify-center border border-white/5 print:bg-gray-100 print:border-gray-300">
-                  <span className="font-bold text-white/40 text-xs print:text-gray-400">LOGO CLIENT</span>
+                <div key={num} className="h-12 md:h-16 print:h-16 bg-white/10 rounded-lg flex items-center justify-center border border-white/5 print:bg-gray-100 print:border-gray-300">
+                  <span className="font-bold text-white/40 text-[10px] md:text-xs print:text-xs print:text-gray-400">LOGO CLIENT</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="mt-auto bg-white/5 p-8 rounded-2xl border border-white/10 print:bg-gray-50 print:border-gray-200">
-            <h3 className="text-xl font-bold uppercase tracking-tighter mb-4 text-white print:text-black">Testimoni Klien</h3>
-            <p className="text-base italic text-white/60 leading-relaxed mb-4 print:text-gray-600">
+          <div className="mt-auto bg-white/5 p-6 md:p-8 print:p-8 rounded-2xl border border-white/10 print:bg-gray-50 print:border-gray-200">
+            <h3 className="text-lg md:text-xl print:text-xl font-bold uppercase tracking-tighter mb-4 text-white print:text-black">Testimoni Klien</h3>
+            <p className="text-sm md:text-base print:text-base italic text-white/60 leading-relaxed mb-4 print:text-gray-600">
               "Kolaborasi dengan Arus Liar Inisiatif Group memberikan dimensi baru bagi operasional kami. Pendekatan lintas sektor mereka sangat komprehensif dan menghasilkan dampak yang nyata."
             </p>
-            <p className="font-bold text-sm text-white/90 print:text-black">— Direktur Utama, Instansi Mitra</p>
+            <p className="font-bold text-xs md:text-sm print:text-sm text-white/90 print:text-black">— Direktur Utama, Instansi Mitra</p>
           </div>
         </div>
 
         {/* PAGE 5: Manusia di Balik Perusahaan */}
-        <div className="h-[297mm] p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
+        <div className="h-auto min-h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] p-6 sm:p-10 md:p-16 print:p-16 relative flex flex-col page-break-after-always bg-[#111111] print:bg-white">
           <div className="mb-8">
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">06. The People</h2>
-            <h3 className="text-3xl font-black uppercase tracking-tighter mb-2 text-white print:text-black">Tim Utama Kami</h3>
+            <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-2 text-white print:text-black">Tim Utama Kami</h3>
             <p className="text-sm text-white/60 print:text-gray-600">Dipimpin oleh para profesional berpengalaman yang mengutamakan nilai integritas dan persaudaraan.</p>
           </div>
 
-          <div className="grid grid-cols-5 gap-y-8 gap-x-4">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 print:grid-cols-5 gap-y-6 md:gap-y-8 print:gap-y-8 gap-x-2 md:gap-x-4 print:gap-x-4">
             {teamMembers.map((member, idx) => (
               <div key={idx} className="flex flex-col items-center text-center">
                 <img 
                   src={member.imgUrl} 
                   alt={member.name} 
-                  className="w-20 h-20 rounded-full object-cover mb-3 border border-white/10 print:border-gray-200"
+                  className="w-16 h-16 md:w-20 md:h-20 print:w-20 print:h-20 rounded-full object-cover mb-2 md:mb-3 print:mb-3 border border-white/10 print:border-gray-200"
                 />
-                <h4 className="font-bold text-xs leading-tight mb-1 text-white/90 print:text-black">{member.name}</h4>
-                <p className="text-[#c084fc] text-[10px] uppercase font-bold tracking-wider print:text-gray-500">{member.role}</p>
+                <h4 className="font-bold text-[10px] md:text-xs print:text-xs leading-tight mb-1 text-white/90 print:text-black">{member.name}</h4>
+                <p className="text-[#c084fc] text-[8px] md:text-[10px] print:text-[10px] uppercase font-bold tracking-wider print:text-gray-500">{member.role}</p>
               </div>
             ))}
           </div>
           
-          <div className="mt-auto border-t border-white/10 pt-8 print:border-gray-200">
-            <h4 className="font-bold text-lg mb-2 text-white print:text-black">Struktur Organisasi</h4>
-            <p className="text-sm text-white/60 text-justify leading-relaxed print:text-gray-600">
+          <div className="mt-auto border-t border-white/10 pt-6 md:pt-8 print:pt-8 print:border-gray-200">
+            <h4 className="font-bold text-base md:text-lg print:text-lg mb-2 text-white print:text-black">Struktur Organisasi</h4>
+            <p className="text-xs md:text-sm print:text-sm text-white/60 text-justify leading-relaxed print:text-gray-600">
               Arus Liar Inisiatif Group beroperasi dengan tata kelola kelembagaan yang transparan, di mana jajaran Komisaris (pengawas dan penasihat strategis) berkolaborasi erat dengan level Eksekutif (CEO, COO, CFO, CMO, CTO, CSO). Setiap direktorat menangani secara mandiri ekosistem anak perusahaan (subsidiaries) yang relevan, memastikan eksekusi operasional yang taktis dan berkelanjutan.
             </p>
           </div>
         </div>
 
         {/* PAGE 6: Call To Action & Contact */}
-        <div className="h-[297mm] p-16 relative flex flex-col justify-center items-center text-center bg-[#1A1A1A] text-white print:bg-white print:text-black border-t border-[#c084fc]/10 print:border-none">
+        <div className="h-[100vh] md:min-h-0 md:h-[297mm] print:h-[297mm] p-6 sm:p-10 md:p-16 print:p-16 relative flex flex-col justify-center items-center text-center bg-[#1A1A1A] text-white print:bg-white print:text-black border-t border-[#c084fc]/10 print:border-none">
           
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(166,76,166,0.1),transparent_70%)] z-0 print:hidden"></div>
           
           <div className="relative z-10 w-full max-w-2xl">
-            <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 text-white print:text-black">Mari Berkolaborasi</h2>
-            <p className="text-lg text-white/70 print:text-gray-600 mb-12">
+            <h2 className="text-3xl md:text-5xl print:text-5xl font-black uppercase tracking-tighter mb-4 md:mb-6 print:mb-6 text-white print:text-black">Mari Berkolaborasi</h2>
+            <p className="text-sm md:text-lg print:text-lg text-white/70 print:text-gray-600 mb-8 md:mb-12 print:mb-12">
               Hubungi kami untuk konsultasi gratis dan mulailah membangun warisan masa depan bersama Arus Liar Inisiatif Group.
             </p>
             
-            <div className="grid grid-cols-2 gap-8 text-left bg-[#111111] print:bg-white border border-white/10 print:border-gray-200 p-8 rounded-3xl mb-12">
-              <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-[#c084fc] flex-shrink-0" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 print:grid-cols-2 gap-6 md:gap-8 print:gap-8 text-left bg-[#111111] print:bg-white border border-white/10 print:border-gray-200 p-6 md:p-8 print:p-8 rounded-3xl mb-8 md:mb-12 print:mb-12">
+              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
+                <Mail className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Email Resmi</p>
-                  <p className="font-bold text-white print:text-black">contact@araing.id</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Email Resmi</p>
+                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">contact@araing.id</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-[#c084fc] flex-shrink-0" />
+              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
+                <Phone className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">WhatsApp / Telepon</p>
-                  <p className="font-bold text-white print:text-black">+62 811 2233 4455</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">WhatsApp / Telepon</p>
+                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">+62 811 2233 4455</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <Globe className="w-6 h-6 text-[#c084fc] flex-shrink-0" />
+              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
+                <Globe className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Website</p>
-                  <p className="font-bold text-white print:text-black">www.araing.id</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Website</p>
+                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">www.araing.id</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-[#c084fc] flex-shrink-0" />
+              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
+                <MapPin className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
                 <div>
-                  <p className="text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Lokasi Kantor</p>
-                  <p className="font-bold text-sm text-white print:text-black">Gedung Inovasi Lt. 8<br/>Cimahi, Indonesia</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Lokasi Kantor</p>
+                  <p className="font-bold text-xs md:text-sm print:text-sm text-white print:text-black">Gedung Inovasi Lt. 8<br/>Cimahi, Indonesia</p>
                 </div>
               </div>
             </div>
 
             <div className="flex justify-center">
               <div className="print:hidden">
-                <img src="/logo-araing.svg" alt="Logo" className="h-12 w-auto filter invert brightness-0" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src="/logo-araing.svg" alt="Logo" className="h-8 md:h-12 print:h-12 w-auto filter invert brightness-0" style={{ filter: 'brightness(0) invert(1)' }} />
               </div>
               <div className="hidden print:block">
-                <img src="/logo-araing.svg" alt="Logo" className="h-12 w-auto filter invert brightness-0" style={{ filter: 'brightness(0)' }} />
+                <img src="/logo-araing.svg" alt="Logo" className="h-8 md:h-12 print:h-12 w-auto filter invert brightness-0" style={{ filter: 'brightness(0)' }} />
               </div>
             </div>
           </div>
