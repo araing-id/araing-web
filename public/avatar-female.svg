@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Female Silhouette with long wavy hair -->
+  <path d="M200 40 C150 40 110 80 120 150 C125 180 110 200 115 220 C120 240 140 230 145 250 C150 270 120 300 130 330 C135 345 150 350 150 350 C130 370 110 400 110 400 L290 400 C290 400 270 370 250 350 C250 350 265 345 270 330 C280 300 250 270 255 250 C260 230 280 240 285 220 C290 200 275 180 280 150 C290 80 250 40 200 40 Z" fill="#222222"/>
+
+  <text x="200" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" fill="#c084fc" text-anchor="middle" letter-spacing="12">SOON</text>
+</svg>
