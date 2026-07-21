@@ -5,9 +5,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
           
           <div className="space-y-4 text-center md:text-left max-w-sm">
-            <a href="#" className="font-bold text-3xl tracking-tighter block">
-              <span className="text-white">araing</span>
-              <span className="text-[#c084fc]">.id</span>
+            <a href="#" className="flex items-center gap-2">
+              <img src="/logo-araing.svg" alt="Araing Logo" className="h-12 w-auto" />
             </a>
             <p className="text-slate-400 text-sm leading-relaxed">
               Arus Liar Inisiatif Group. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.

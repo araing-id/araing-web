@@ -37,9 +37,8 @@ export default function Navbar() {
       <div className="container mx-auto px-6">
         <div className={`p-4 rounded-2xl flex items-center justify-between transition-colors ${isScrolled ? "bg-[#1A1A1A]/90 backdrop-blur-md border border-white/10 shadow-lg" : ""}`}>
           
-          <a href="#" className="font-bold text-2xl tracking-tighter">
-            <span className="text-white">araing</span>
-            <span className="text-[#c084fc]">.id</span>
+          <a href="#" className="flex items-center gap-2">
+            <img src="/logo-araing.svg" alt="Araing Logo" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Nav */}
