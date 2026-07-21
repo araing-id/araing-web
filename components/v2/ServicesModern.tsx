@@ -15,7 +15,7 @@ export default function ServicesModern() {
     },
     {
       id: "tech",
-      title: "Tech-X & Transformasi",
+      title: "Tech-X",
       desc: "Pengembangan perangkat lunak & solusi IT.",
       icon: <Code className="w-10 h-10 text-white/80" />,
       color: "rgba(6, 182, 212, 0.4)" // cyan

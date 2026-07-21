@@ -11,7 +11,7 @@ export default function TeamPage() {
     { name: "Ferdiansyah Nugraha", role: "CTO", imgUrl: null },
     { name: "Decky Firmansyah", role: "Commissioner", imgUrl: null },
     { name: "Putri Dwi Lestari", role: "Head of Digital Media", imgUrl: null },
-    { name: "Restu Tidar Nugraha", role: "Head of Tech-X and Tranformation", imgUrl: null },
+    { name: "Restu Tidar Nugraha", role: "Head of Tech-X", imgUrl: null },
     { name: "Riskie Septiani", role: "Head of Healthcare", imgUrl: null },
     { name: "Fariq Irham", role: "Head of Infrastructure", imgUrl: null },
     { name: "Gina Dwi Cahyani", role: "Head of Legal Advisory", imgUrl: null },

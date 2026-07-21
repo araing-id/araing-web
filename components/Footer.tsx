@@ -28,7 +28,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold">Sektor</h4>
               <ul className="space-y-2">
                 <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Digital Media</a></li>
-                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Tech-X & Transformasi</a></li>
+                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Tech-X</a></li>
                 <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Healthcare</a></li>
                 <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Legal Advisory</a></li>
                 <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Infrastructure</a></li>

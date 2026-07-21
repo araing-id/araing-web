@@ -131,7 +131,7 @@ export default function CompanyProfilePage() {
             <div className="space-y-4 md:space-y-6 print:space-y-6">
               {[
                 { name: "Digital Media", info: "Pemasaran digital, kampanye kreatif, dan manajemen media sosial tingkat lanjut." },
-                { name: "Tech-X & Transformasi", info: "Konsultasi IT, pengembangan perangkat lunak, dan digitalisasi operasi bisnis." },
+                { name: "Tech-X", info: "Konsultasi IT, pengembangan perangkat lunak, dan digitalisasi operasi bisnis." },
                 { name: "Healthcare", info: "Sistem rekam medis terpadu dan solusi teknologi kesehatan modern." },
                 { name: "Legal Advisory", info: "Pendampingan hukum perusahaan, kepatuhan regulasi, dan perizinan." },
                 { name: "Infrastructure", info: "Perencanaan dan manajemen proyek infrastruktur cerdas." },
