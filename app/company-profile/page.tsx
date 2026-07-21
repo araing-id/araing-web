@@ -8,11 +8,30 @@ export default function CompanyProfilePage() {
     window.print();
   };
 
-  const teamMembers = Array.from({ length: 15 }).map((_, i) => ({
-    name: `Anggota Tim ${i + 1}`,
-    role: i % 3 === 0 ? "Executive" : i % 2 === 0 ? "Specialist" : "Manager",
-    imgUrl: `https://ui-avatars.com/api/?name=Anggota+${i+1}&background=random&color=fff&size=200`,
-  }));
+  const teamMembers = [
+    { name: "Priyambodo Pujo Sulaksono", role: "CEO", imgUrl: null },
+    { name: "Hafizh Alief Alamsyah", role: "COO", imgUrl: null },
+    { name: "Salsabilla Adfanisa", role: "CFO", imgUrl: null },
+    { name: "Shabila Pridadindya", role: "CSO", imgUrl: null },
+    { name: "Bella Wyndara", role: "CMO", imgUrl: null },
+    { name: "Ferdiansyah Nugraha", role: "CTO", imgUrl: null },
+    { name: "Decky Firmansyah", role: "Commissioner", imgUrl: null },
+    { name: "Putri Dwi Lestari", role: "Head of Digital Media", imgUrl: null },
+    { name: "Restu Tidar Nugraha", role: "Head of Tech-X", imgUrl: null },
+    { name: "Riskie Septiani", role: "Head of Healthcare", imgUrl: null },
+    { name: "Fariq Irham", role: "Head of Infrastructure", imgUrl: null },
+    { name: "Gina Dwi Cahyani", role: "Head of Legal Advisory", imgUrl: null },
+    { name: "Iyarra Herlan Nugraha", role: "Secretary", imgUrl: null },
+    { name: "Denny Rizky", role: "Member", imgUrl: null },
+    { name: "Naufal Fausta (Uta)", role: "Member", imgUrl: null },
+    { name: "Husni Siddiq Rijaldi", role: "Member", imgUrl: null },
+    { name: "M Rizky Hidayatulloh", role: "Member", imgUrl: null },
+    { name: "Renald Alfarish", role: "Member", imgUrl: null }
+  ];
+
+  const getInitials = (name: string) => {
+    return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+  };
 
   const portfolios = [
     { title: "Project Alpha", client: "Kementerian BUMN", desc: "Digitalisasi sistem operasional terpusat dengan peningkatan efisiensi 40%." },
@@ -208,14 +227,26 @@ export default function CompanyProfilePage() {
 
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 print:grid-cols-5 gap-y-6 md:gap-y-8 print:gap-y-8 gap-x-2 md:gap-x-4 print:gap-x-4">
             {teamMembers.map((member, idx) => (
-              <div key={idx} className="flex flex-col items-center text-center">
-                <img 
-                  src={member.imgUrl} 
-                  alt={member.name} 
-                  className="w-16 h-16 md:w-20 md:h-20 print:w-20 print:h-20 rounded-full object-cover mb-2 md:mb-3 print:mb-3 border border-white/10 print:border-gray-200"
-                />
-                <h4 className="font-bold text-[10px] md:text-xs print:text-xs leading-tight mb-1 text-white/90 print:text-black">{member.name}</h4>
-                <p className="text-[#c084fc] text-[8px] md:text-[10px] print:text-[10px] uppercase font-bold tracking-wider print:text-gray-500">{member.role}</p>
+              <div key={idx} className="flex flex-col items-center text-center group h-full">
+                {member.imgUrl ? (
+                  <img 
+                    src={member.imgUrl} 
+                    alt={member.name} 
+                    className="w-16 h-16 md:w-20 md:h-20 print:w-20 print:h-20 rounded-full object-cover mb-2 md:mb-3 print:mb-3 border border-white/10 print:border-gray-200"
+                  />
+                ) : (
+                  <div className="w-16 h-16 md:w-20 md:h-20 print:w-20 print:h-20 rounded-full mb-2 md:mb-3 print:mb-3 bg-gradient-to-br from-[#111] to-[#1a1a1a] print:from-gray-100 print:to-gray-200 flex flex-col items-center justify-center relative overflow-hidden group-hover:from-[#1a1a1a] group-hover:to-[#222] transition-colors duration-500 border border-white/10 print:border-gray-200 shrink-0">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#c084fc]/10 blur-[10px] rounded-full group-hover:bg-[#c084fc]/30 group-hover:scale-150 transition-all duration-700 print:hidden"></div>
+                    <span className="text-xl md:text-2xl print:text-2xl font-black text-white/10 print:text-black/10 tracking-tighter absolute select-none group-hover:scale-110 transition-all duration-500">
+                      {getInitials(member.name)}
+                    </span>
+                    <span className="relative z-10 text-[#c084fc] text-[7px] md:text-[8px] print:text-[8px] font-bold tracking-[0.2em] uppercase mt-1 opacity-80 group-hover:opacity-100 print:text-gray-500">Soon</span>
+                  </div>
+                )}
+                <div className="flex flex-col flex-grow items-center w-full justify-start">
+                  <h4 className="font-bold text-[10px] md:text-xs print:text-xs leading-tight mb-1 text-white/90 print:text-black">{member.name}</h4>
+                  <p className="text-[#c084fc] text-[8px] md:text-[10px] print:text-[10px] uppercase font-bold tracking-wider mt-auto pt-1 print:text-gray-500">{member.role}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -249,7 +280,7 @@ export default function CompanyProfilePage() {
                 </div>
                 <div>
                   <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">Email Resmi</p>
-                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">contact@araing.id</p>
+                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">info@araing.id</p>
                 </div>
               </a>
 
@@ -279,7 +310,7 @@ export default function CompanyProfilePage() {
                 </div>
                 <div>
                   <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">Lokasi Kantor</p>
-                  <p className="font-bold text-xs md:text-sm print:text-sm text-white print:text-black">Gedung Inovasi Lt. 8<br/>Cimahi, Indonesia</p>
+                  <p className="font-bold text-xs md:text-sm print:text-sm text-white print:text-black">Cimahi, Indonesia</p>
                 </div>
               </a>
             </div>
