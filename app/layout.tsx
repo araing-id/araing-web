@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     description: "Ekosistem kolaboratif multi-sektor yang berfokus pada dampak sosial dan keunggulan komersial.",
     images: ["/og-image.png"],
   },
+  icons: {
+    icon: "/logo-araing.svg",
+    shortcut: "/logo-araing.svg",
+    apple: "/logo-araing.svg",
+  },
 };
 
 export default function RootLayout({
