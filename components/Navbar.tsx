@@ -35,11 +35,11 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className={`p-4 rounded-2xl flex items-center justify-between ${isScrolled ? "glass-card" : ""}`}>
+        <div className={`p-4 rounded-2xl flex items-center justify-between transition-colors ${isScrolled ? "bg-[#1A1A1A]/90 backdrop-blur-md border border-white/10 shadow-lg" : ""}`}>
           
           <a href="#" className="font-bold text-2xl tracking-tighter">
             <span className="text-white">araing</span>
-            <span className="text-blue-500">.id</span>
+            <span className="text-[#c084fc]">.id</span>
           </a>
 
           {/* Desktop Nav */}
@@ -55,7 +55,7 @@ export default function Navbar() {
             ))}
             <a 
               href="#contact" 
-              className="px-5 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-full text-sm font-medium transition-all shadow-[0_0_15px_rgba(37,99,235,0.5)]"
+              className="px-5 py-2 bg-[#c084fc] hover:bg-[#a64ca6] text-white rounded-full text-sm font-medium transition-all shadow-[0_0_15px_rgba(192,132,252,0.3)]"
             >
               Hubungi Kami
             </a>

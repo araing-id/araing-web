@@ -18,7 +18,6 @@ export default function PillarsModern() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#c084fc]/5 blur-[80px] rounded-full pointer-events-none group-hover:bg-[#c084fc]/15 transition-colors duration-500"></div>
 
       <div className="mb-8 relative z-10">
-        <p className="text-[#c084fc] text-sm uppercase tracking-widest font-semibold mb-2">Pasal 7</p>
         <h2 className="text-3xl md:text-4xl font-black text-white italic uppercase tracking-tighter mb-4">
           5 Pilar <br/> Organisasi
         </h2>
