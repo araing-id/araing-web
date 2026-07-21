@@ -35,36 +35,47 @@ export default function HeroModern() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-[#c084fc] font-medium tracking-widest uppercase text-sm mb-4">Aesthetic & Modern</h3>
+            <h3 className="text-[#c084fc] font-medium tracking-widest uppercase text-sm mb-4">Ekosistem Kolaboratif Multi-Sektor</h3>
             
-            {/* The main striking typography, similar to "Social Media Marketing" */}
+            {/* The main striking typography */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none tracking-tighter">
               Arus Liar<br />
               <span className="font-serif italic font-medium text-white/90">Inisiatif Group</span>
             </h1>
           </motion.div>
 
-          <motion.p 
+          <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-white/70 max-w-2xl mx-auto text-sm md:text-base lg:text-lg mt-8 font-medium leading-relaxed"
+            className="mt-8 space-y-4 max-w-2xl mx-auto"
           >
-            "Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis dari dinamika sosial adalah modal dasar tak ternilai. Kami hadir sebagai entitas bisnis komersial yang menjunjung tinggi nilai profesionalisme tanpa sedikit pun menanggalkan semangat persaudaraan."
-          </motion.p>
+            <p className="text-white text-base md:text-lg lg:text-xl font-medium leading-relaxed">
+              Arus Liar Inisiatif Group adalah entitas bisnis komersial yang berfokus pada ekosistem lintas sektor. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
+            </p>
+            <p className="text-white/60 text-sm md:text-base italic leading-relaxed">
+              "Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis dari dinamika sosial adalah modal dasar tak ternilai."
+            </p>
+          </motion.div>
         </div>
 
         {/* Bottom Actions */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-          <button className="px-6 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors w-full sm:w-auto">
-            100+ Projects & Initiatives
-          </button>
+          <a 
+            href="#contact" 
+            className="px-8 py-3 rounded-full bg-[#c084fc] text-white font-semibold text-sm hover:bg-[#a64ca6] transition-all shadow-[0_0_20px_rgba(192,132,252,0.4)] w-full sm:w-auto text-center"
+          >
+            Hubungi Kami
+          </a>
           
-          <button className="group/btn px-6 py-3 rounded-full border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors flex items-center justify-center w-full sm:w-auto gap-2">
-            Lihat Portofolio
+          <a 
+            href="/portofolio"
+            className="group/btn px-8 py-3 rounded-full border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors flex items-center justify-center w-full sm:w-auto gap-2"
+          >
+            Lihat Proyek
             <ArrowUpRight className="w-4 h-4 group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5 transition-transform" />
-          </button>
+          </a>
         </div>
         
       </div>

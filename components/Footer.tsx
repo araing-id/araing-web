@@ -17,24 +17,25 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-white font-semibold">Organisasi</h4>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-slate-400 hover:text-white transition-colors text-sm">Visi & Misi</a></li>
-                <li><a href="#pillars" className="text-slate-400 hover:text-white transition-colors text-sm">5 Pilar</a></li>
-                <li><a href="#team" className="text-slate-400 hover:text-white transition-colors text-sm">Struktur</a></li>
+                <li><a href="/#about" className="text-slate-400 hover:text-white transition-colors text-sm">Visi & Misi</a></li>
+                <li><a href="/#pillars" className="text-slate-400 hover:text-white transition-colors text-sm">5 Pilar</a></li>
+                <li><a href="/team" className="text-slate-400 hover:text-white transition-colors text-sm">Tim Kami</a></li>
               </ul>
             </div>
             
             <div className="space-y-4">
               <h4 className="text-white font-semibold">Sektor</h4>
               <ul className="space-y-2">
-                <li><a href="#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Digital Media</a></li>
-                <li><a href="#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Tech-X</a></li>
-                <li><a href="#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Healthcare</a></li>
+                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Digital Media</a></li>
+                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Tech-X</a></li>
+                <li><a href="/portofolio" className="text-slate-400 hover:text-white transition-colors text-sm">Portofolio Proyek</a></li>
               </ul>
             </div>
             
             <div className="space-y-4">
               <h4 className="text-white font-semibold">Legal</h4>
               <ul className="space-y-2">
+                <li><a href="/company-profile" className="text-slate-400 hover:text-white transition-colors text-sm">Unduh Company Profile</a></li>
                 <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
                 <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Terms of Service</a></li>
               </ul>

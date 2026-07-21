@@ -50,6 +50,15 @@ export default function TeamModern() {
           </motion.div>
         ))}
       </div>
+
+      <div className="mt-12 flex justify-center relative z-10">
+        <a 
+          href="/team" 
+          className="px-6 py-2 rounded-full border border-white/20 text-white text-sm hover:bg-white/10 transition-colors flex items-center gap-2"
+        >
+          Lihat Seluruh Tim
+        </a>
+      </div>
     </div>
   );
 }
