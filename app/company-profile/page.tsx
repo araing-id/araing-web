@@ -234,40 +234,54 @@ export default function CompanyProfilePage() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(166,76,166,0.1),transparent_70%)] z-0 print:hidden"></div>
           
           <div className="relative z-10 w-full max-w-2xl">
-            <h2 className="text-3xl md:text-5xl print:text-5xl font-black uppercase tracking-tighter mb-4 md:mb-6 print:mb-6 text-white print:text-black">Mari Berkolaborasi</h2>
+            <h2 className="text-3xl md:text-5xl print:text-4xl font-black uppercase tracking-tighter mb-4 md:mb-6 print:mb-6 text-white print:text-black">Mari Berkolaborasi</h2>
             <p className="text-sm md:text-lg print:text-lg text-white/70 print:text-gray-600 mb-8 md:mb-12 print:mb-12">
               Hubungi kami untuk konsultasi gratis dan mulailah membangun warisan masa depan bersama Arus Liar Inisiatif Group.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 print:grid-cols-2 gap-6 md:gap-8 print:gap-8 text-left bg-[#111111] print:bg-white border border-white/10 print:border-gray-200 p-6 md:p-8 print:p-8 rounded-3xl mb-8 md:mb-12 print:mb-12">
-              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
-                <Mail className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 print:grid-cols-2 gap-4 md:gap-6 print:gap-6 text-left mb-8 md:mb-12 print:mb-12 relative">
+              {/* Decorative glow behind cards */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#c084fc]/5 blur-[100px] -z-10 rounded-full print:hidden"></div>
+
+              <a href="mailto:contact@araing.id" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
+                <div className="w-12 h-12 rounded-full bg-black/40 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#c084fc] group-hover:border-[#c084fc] transition-all duration-300 print:bg-gray-100 print:border-gray-200">
+                  <Mail className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] group-hover:text-white transition-colors flex-shrink-0 print:text-black" />
+                </div>
                 <div>
-                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Email Resmi</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">Email Resmi</p>
                   <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">contact@araing.id</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
-                <Phone className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
+              </a>
+
+              <a href="https://wa.me/6281122334455" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
+                <div className="w-12 h-12 rounded-full bg-black/40 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#c084fc] group-hover:border-[#c084fc] transition-all duration-300 print:bg-gray-100 print:border-gray-200">
+                  <Phone className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] group-hover:text-white transition-colors flex-shrink-0 print:text-black" />
+                </div>
                 <div>
-                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">WhatsApp / Telepon</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">WhatsApp / Telepon</p>
                   <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">+62 811 2233 4455</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
-                <Globe className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
+              </a>
+
+              <a href="https://araing.id" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
+                <div className="w-12 h-12 rounded-full bg-black/40 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#c084fc] group-hover:border-[#c084fc] transition-all duration-300 print:bg-gray-100 print:border-gray-200">
+                  <Globe className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] group-hover:text-white transition-colors flex-shrink-0 print:text-black" />
+                </div>
                 <div>
-                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Website</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">Website</p>
                   <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">www.araing.id</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-3 md:gap-4 print:gap-4">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] flex-shrink-0" />
+              </a>
+
+              <a href="https://maps.google.com/?q=Cimahi,Indonesia" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
+                <div className="w-12 h-12 rounded-full bg-black/40 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#c084fc] group-hover:border-[#c084fc] transition-all duration-300 print:bg-gray-100 print:border-gray-200">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] group-hover:text-white transition-colors flex-shrink-0 print:text-black" />
+                </div>
                 <div>
-                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 print:text-gray-500 mb-1">Lokasi Kantor</p>
+                  <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">Lokasi Kantor</p>
                   <p className="font-bold text-xs md:text-sm print:text-sm text-white print:text-black">Gedung Inovasi Lt. 8<br/>Cimahi, Indonesia</p>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div className="flex justify-center">
