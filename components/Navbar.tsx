@@ -20,6 +20,7 @@ export default function Navbar() {
     { label: "Beranda", href: "/#hero" },
     { label: "Tentang", href: "/#about" },
     { label: "Sektor", href: "/#divisions" },
+    { label: "Proyek Aktif", href: "/projects" },
     { label: "Portofolio", href: "/portofolio" },
     { label: "Tim", href: "/#team" },
     { label: "Company Profile", href: "/company-profile" },

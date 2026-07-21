@@ -51,12 +51,24 @@ export default function Home() {
             <RoadmapModern />
           </div>
           <div className="lg:col-span-1 flex flex-col justify-end">
-            {/* Just an aesthetic filler card to balance the bento grid */}
-            <div className="h-[200px] bg-[#1A1A1A] rounded-3xl p-8 border border-[#333] flex items-center justify-center overflow-hidden relative group">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#111111] to-[#c084fc]/20 opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="text-3xl font-black text-white/20 uppercase transform -rotate-12 group-hover:rotate-0 transition-transform duration-500">
-                Arus Liar
-              </h3>
+            <div className="h-full bg-gradient-to-br from-[#1A1A1A] to-[#2B1B36] rounded-3xl p-8 border border-[#c084fc]/30 flex flex-col justify-center relative overflow-hidden group shadow-[0_0_30px_rgba(192,132,252,0.1)]">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#c084fc]/20 blur-[50px] rounded-full group-hover:bg-[#c084fc]/40 transition-colors duration-500"></div>
+              
+              <div className="relative z-10">
+                <span className="inline-block px-3 py-1 bg-[#c084fc]/20 text-[#c084fc] rounded-full text-[10px] font-bold uppercase tracking-widest mb-4">
+                  Open Recruitment
+                </span>
+                <h3 className="text-2xl font-black text-white italic uppercase tracking-tight mb-2 leading-tight">
+                  Bergabunglah Menjadi<br/>
+                  <span className="text-[#c084fc]">Balad Araing</span>
+                </h3>
+                <p className="text-white/70 text-xs leading-relaxed mb-6">
+                  Jadilah motor penggerak perubahan sosial. Kami mencari SDM berdedikasi tinggi yang siap berdampak nyata bagi masyarakat melalui inisiatif lintas sektor.
+                </p>
+                <a href="#contact" className="inline-flex items-center justify-center w-full px-6 py-3 rounded-full bg-white text-black font-semibold text-sm hover:bg-gray-200 transition-colors gap-2">
+                  Daftar Sekarang
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -26,9 +26,9 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-white font-semibold">Sektor</h4>
               <ul className="space-y-2">
-                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Digital Media</a></li>
-                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Tech-X</a></li>
-                <li><a href="/portofolio" className="text-slate-400 hover:text-white transition-colors text-sm">Portofolio Proyek</a></li>
+                <li><a href="/#divisions" className="text-slate-400 hover:text-white transition-colors text-sm">Sektor Keahlian</a></li>
+                <li><a href="/projects" className="text-slate-400 hover:text-white transition-colors text-sm">Proyek Berjalan</a></li>
+                <li><a href="/portofolio" className="text-slate-400 hover:text-white transition-colors text-sm">Portofolio Masa Lalu</a></li>
               </ul>
             </div>
             
