@@ -86,12 +86,12 @@ export default function CompanyProfilePage() {
           <div className="mt-auto mb-12">
             <h3 className="text-base md:text-lg print:text-lg font-bold uppercase tracking-widest text-[#c084fc] mb-4 print:text-black">Mukadimah</h3>
             <p className="text-sm text-white/70 leading-relaxed text-justify print:text-gray-700">
-              Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis yang lahir dari dinamika sosial merupakan modal dasar yang tak ternilai, maka diperlukan sebuah wadah yang terstruktur, profesional, dan memiliki landasan hukum yang kuat. Wadah ini bertransformasi dari sekadar lingkaran pertemanan menjadi sebuah entitas bisnis komersial yang menjunjung tinggi nilai-nilai profesionalisme tanpa sedikit pun menanggalkan semangat persaudaraan. Atas dasar kesepakatan bersama, disusunlah Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) Arus Liar Inisiatif Group sebagai pedoman fundamental, arah strategis, serta solusi resolusi dalam setiap dinamika organisasi.
+              Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis yang lahir dari dinamika sosial merupakan modal dasar yang tak ternilai, maka diperlukan sebuah wadah yang terstruktur, profesional, dan memiliki landasan hukum yang kuat. Wadah ini bertransformasi dari sekadar lingkaran pertemanan menjadi sebuah entitas bisnis komersial yang menjunjung tinggi nilai-nilai profesionalisme tanpa sedikit pun menanggalkan semangat persaudaraan. Atas dasar kesepakatan bersama, disusunlah Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) Arus Liar Inisiatif Grup sebagai pedoman fundamental, arah strategis, serta solusi resolusi dalam setiap dinamika organisasi.
             </p>
           </div>
           
           <div className="flex-shrink-0 pt-8 border-t border-white/10 md:border-none md:pt-0">
-            <p className="font-bold tracking-widest uppercase text-xs text-white/90 print:text-black">Arus Liar Inisiatif Group</p>
+            <p className="font-bold tracking-widest uppercase text-xs text-white/90 print:text-black">Arus Liar Inisiatif Grup</p>
             <p className="text-white/40 text-xs print:text-gray-500">Tahun 2026</p>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function CompanyProfilePage() {
           <div className="mt-auto bg-white/5 p-6 md:p-8 print:p-8 rounded-2xl border border-white/10 print:bg-gray-50 print:border-gray-200">
             <h3 className="text-lg md:text-xl print:text-xl font-bold uppercase tracking-tighter mb-4 text-white print:text-black">Testimoni Klien</h3>
             <p className="text-sm md:text-base print:text-base italic text-white/60 leading-relaxed mb-4 print:text-gray-600">
-              "Kolaborasi dengan Arus Liar Inisiatif Group memberikan dimensi baru bagi operasional kami. Pendekatan lintas sektor mereka sangat komprehensif dan menghasilkan dampak yang nyata."
+              "Kolaborasi dengan Arus Liar Inisiatif Grup memberikan dimensi baru bagi operasional kami. Pendekatan lintas sektor mereka sangat komprehensif dan menghasilkan dampak yang nyata."
             </p>
             <p className="font-bold text-xs md:text-sm print:text-sm text-white/90 print:text-black">— Direktur Utama, Instansi Mitra</p>
           </div>
@@ -254,7 +254,7 @@ export default function CompanyProfilePage() {
           <div className="mt-auto border-t border-white/10 pt-6 md:pt-8 print:pt-8 print:border-gray-200">
             <h4 className="font-bold text-base md:text-lg print:text-lg mb-2 text-white print:text-black">Struktur Organisasi</h4>
             <p className="text-xs md:text-sm print:text-sm text-white/60 text-justify leading-relaxed print:text-gray-600">
-              Arus Liar Inisiatif Group beroperasi dengan tata kelola kelembagaan yang transparan, di mana jajaran Komisaris (pengawas dan penasihat strategis) berkolaborasi erat dengan level Eksekutif (CEO, COO, CFO, CMO, CTO, CSO). Setiap direktorat menangani secara mandiri ekosistem anak perusahaan (subsidiaries) yang relevan, memastikan eksekusi operasional yang taktis dan berkelanjutan.
+              Arus Liar Inisiatif Grup beroperasi dengan tata kelola kelembagaan yang transparan, di mana jajaran Komisaris (pengawas dan penasihat strategis) berkolaborasi erat dengan level Eksekutif (CEO, COO, CFO, CMO, CTO, CSO). Setiap direktorat menangani secara mandiri ekosistem anak perusahaan (subsidiaries) yang relevan, memastikan eksekusi operasional yang taktis dan berkelanjutan.
             </p>
           </div>
         </div>
@@ -267,7 +267,7 @@ export default function CompanyProfilePage() {
           <div className="relative z-10 w-full max-w-2xl">
             <h2 className="text-3xl md:text-5xl print:text-4xl font-black uppercase tracking-tighter mb-4 md:mb-6 print:mb-6 text-white print:text-black">Mari Berkolaborasi</h2>
             <p className="text-sm md:text-lg print:text-lg text-white/70 print:text-gray-600 mb-8 md:mb-12 print:mb-12">
-              Hubungi kami untuk konsultasi gratis dan mulailah membangun warisan masa depan bersama Arus Liar Inisiatif Group.
+              Hubungi kami untuk konsultasi gratis dan mulailah membangun warisan masa depan bersama Arus Liar Inisiatif Grup.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 print:grid-cols-2 gap-4 md:gap-6 print:gap-6 text-left mb-8 md:mb-12 print:mb-12 relative">

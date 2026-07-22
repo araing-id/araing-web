@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Pendahuluan</h2>
             <p className="leading-relaxed">
-              Arus Liar Inisiatif Group ("Kami", "Perusahaan") menghormati privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda bagikan kepada kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, memelihara, dan melindungi informasi pengunjung website <strong>araing.id</strong>.
+              Arus Liar Inisiatif Grup ("Kami", "Perusahaan") menghormati privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda bagikan kepada kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, memelihara, dan melindungi informasi pengunjung website <strong>araing.id</strong>.
             </p>
           </section>
 
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">4. Perlindungan dan Kerahasiaan Data</h2>
             <p className="leading-relaxed">
-              Arus Liar Inisiatif Group beroperasi dengan prinsip <em>holding company</em> di mana integritas dan kerahasiaan mitra adalah prioritas. Kami <strong>tidak pernah dan tidak akan pernah</strong> menjual, menyewakan, atau menukar informasi pribadi Anda kepada pihak ketiga untuk tujuan komersial di luar ekosistem terafiliasi kami, kecuali diwajibkan oleh hukum yang berlaku di Republik Indonesia.
+              Arus Liar Inisiatif Grup beroperasi dengan prinsip <em>holding company</em> di mana integritas dan kerahasiaan mitra adalah prioritas. Kami <strong>tidak pernah dan tidak akan pernah</strong> menjual, menyewakan, atau menukar informasi pribadi Anda kepada pihak ketiga untuk tujuan komersial di luar ekosistem terafiliasi kami, kecuali diwajibkan oleh hukum yang berlaku di Republik Indonesia.
             </p>
           </section>
 

@@ -9,7 +9,7 @@ export default function Footer() {
               <img src="/logo-araing.svg" alt="Araing Logo" className="h-12 w-auto" />
             </a>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Arus Liar Inisiatif Group. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
+              Arus Liar Inisiatif Grup. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} Arus Liar Inisiatif Group. All rights reserved.
+            &copy; {new Date().getFullYear()} Arus Liar Inisiatif Grup. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <a href="https://instagram.com/araing.id" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:bg-white/10 transition-all" aria-label="Instagram">

@@ -21,21 +21,21 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Penerimaan Ketentuan</h2>
             <p className="leading-relaxed">
-              Dengan mengakses dan menggunakan website <strong>araing.id</strong>, Anda secara otomatis menyetujui seluruh Ketentuan Layanan (<em>Terms of Service</em>) yang ditetapkan oleh Arus Liar Inisiatif Group. Jika Anda tidak setuju dengan ketentuan ini, Anda dipersilakan untuk menghentikan penggunaan situs ini.
+              Dengan mengakses dan menggunakan website <strong>araing.id</strong>, Anda secara otomatis menyetujui seluruh Ketentuan Layanan (<em>Terms of Service</em>) yang ditetapkan oleh Arus Liar Inisiatif Grup. Jika Anda tidak setuju dengan ketentuan ini, Anda dipersilakan untuk menghentikan penggunaan situs ini.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">2. Sifat Entitas dan Ekosistem</h2>
             <p className="leading-relaxed">
-              Arus Liar Inisiatif Group bertindak sebagai <em>holding company</em> dan inkubator ide yang membawahi berbagai anak perusahaan (<em>subsidiaries</em>) independen di berbagai sektor. Segala bentuk kerja sama bisnis, penawaran proyek, atau operasional lapangan akan diatur dan tunduk pada kontrak spesifik yang mengikat entitas anak perusahaan terkait, bukan sekadar representasi dari website ini.
+              Arus Liar Inisiatif Grup bertindak sebagai <em>holding company</em> dan inkubator ide yang membawahi berbagai anak perusahaan (<em>subsidiaries</em>) independen di berbagai sektor. Segala bentuk kerja sama bisnis, penawaran proyek, atau operasional lapangan akan diatur dan tunduk pada kontrak spesifik yang mengikat entitas anak perusahaan terkait, bukan sekadar representasi dari website ini.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">3. Hak Kekayaan Intelektual</h2>
             <p className="leading-relaxed mb-4">
-              Seluruh konten, desain, logo, tulisan, dan aset digital yang terdapat di website ini adalah milik eksklusif Arus Liar Inisiatif Group atau anak perusahaannya, serta dilindungi oleh undang-undang hak cipta Republik Indonesia.
+              Seluruh konten, desain, logo, tulisan, dan aset digital yang terdapat di website ini adalah milik eksklusif Arus Liar Inisiatif Grup atau anak perusahaannya, serta dilindungi oleh undang-undang hak cipta Republik Indonesia.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Portofolio:</strong> Proyek-proyek yang ditampilkan di halaman <code>/portofolio</code> adalah hasil karya nyata dari ekosistem kami dan mitra terkait. Menggandakan, memodifikasi, atau mengklaim hasil karya tersebut adalah pelanggaran hukum.</li>
@@ -46,7 +46,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">4. Batasan Tanggung Jawab (Liability)</h2>
             <p className="leading-relaxed">
-              Arus Liar Inisiatif Group berupaya memastikan seluruh informasi di website ini akurat dan mutakhir. Namun demikian, kami <strong>tidak bertanggung jawab</strong> atas kerugian langsung, tidak langsung, insidental, maupun konsekuensial yang mungkin timbul akibat penggunaan atau ketidakmampuan menggunakan website ini. Informasi yang bersifat proyeksi masa depan (<em>roadmap</em>, inisiatif akan datang) bukanlah sebuah janji mengikat yang menjamin hasil absolut.
+              Arus Liar Inisiatif Grup berupaya memastikan seluruh informasi di website ini akurat dan mutakhir. Namun demikian, kami <strong>tidak bertanggung jawab</strong> atas kerugian langsung, tidak langsung, insidental, maupun konsekuensial yang mungkin timbul akibat penggunaan atau ketidakmampuan menggunakan website ini. Informasi yang bersifat proyeksi masa depan (<em>roadmap</em>, inisiatif akan datang) bukanlah sebuah janji mengikat yang menjamin hasil absolut.
             </p>
           </section>
 
@@ -60,7 +60,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">6. Perubahan Ketentuan</h2>
             <p className="leading-relaxed">
-              Arus Liar Inisiatif Group berhak memperbarui Ketentuan Layanan ini kapan saja tanpa pemberitahuan sebelumnya. Penggunaan berkelanjutan Anda atas situs ini setelah adanya pembaruan dianggap sebagai penerimaan Anda terhadap ketentuan yang baru.
+              Arus Liar Inisiatif Grup berhak memperbarui Ketentuan Layanan ini kapan saja tanpa pemberitahuan sebelumnya. Penggunaan berkelanjutan Anda atas situs ini setelah adanya pembaruan dianggap sebagai penerimaan Anda terhadap ketentuan yang baru.
             </p>
           </section>
         </div>

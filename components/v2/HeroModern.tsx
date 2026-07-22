@@ -52,7 +52,7 @@ export default function HeroModern() {
             className="mt-8 space-y-4 max-w-2xl mx-auto"
           >
             <p className="text-white text-base md:text-lg lg:text-xl font-medium leading-relaxed">
-              Arus Liar Inisiatif Group adalah entitas bisnis komersial yang berfokus pada ekosistem lintas sektor. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
+              Arus Liar Inisiatif Grup adalah entitas bisnis komersial yang berfokus pada ekosistem lintas sektor. Mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban.
             </p>
             <p className="text-white/60 text-sm md:text-base italic leading-relaxed">
               "Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis dari dinamika sosial adalah modal dasar tak ternilai."

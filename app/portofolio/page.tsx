@@ -22,7 +22,7 @@ export default function PortofolioPage() {
             Portofolio
           </h1>
           <p className="text-white/60 max-w-2xl text-lg">
-            Rekam jejak dan dampak nyata dari kolaborasi lintas sektor Arus Liar Inisiatif Group.
+            Rekam jejak dan dampak nyata dari kolaborasi lintas sektor Arus Liar Inisiatif Grup.
           </p>
         </div>
 
