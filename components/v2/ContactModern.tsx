@@ -35,8 +35,8 @@ export default function ContactModern() {
       {/* Contact Info (Sleek Glass Badges) */}
       <div className="flex flex-col w-full space-y-4 mb-12 relative z-10">
         {[
-          { icon: <Mail className="w-5 h-5 text-[#c084fc]" />, text: "contact@araing.id" },
-          { icon: <Phone className="w-5 h-5 text-[#c084fc]" />, text: "+62 811 2233 4455" },
+          { icon: <Mail className="w-5 h-5 text-[#c084fc]" />, text: "info@araing.id" },
+          { icon: <Phone className="w-5 h-5 text-[#c084fc]" />, text: "+62 857 9346 8966" },
           { icon: <MapPin className="w-5 h-5 text-[#c084fc]" />, text: "Cimahi, Indonesia" }
         ].map((item, idx) => (
           <motion.div 

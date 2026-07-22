@@ -274,7 +274,7 @@ export default function CompanyProfilePage() {
               {/* Decorative glow behind cards */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#c084fc]/5 blur-[100px] -z-10 rounded-full print:hidden"></div>
 
-              <a href="mailto:contact@araing.id" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
+              <a href="mailto:info@araing.id" className="group flex items-start gap-4 p-6 rounded-3xl bg-white/5 hover:bg-[#c084fc]/10 border border-white/10 hover:border-[#c084fc]/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(192,132,252,0.15)] print:bg-white print:border-gray-200 print:p-4 print:hover:translate-y-0 print:shadow-none">
                 <div className="w-12 h-12 rounded-full bg-black/40 border border-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-[#c084fc] group-hover:border-[#c084fc] transition-all duration-300 print:bg-gray-100 print:border-gray-200">
                   <Mail className="w-5 h-5 md:w-6 md:h-6 print:w-6 print:h-6 text-[#c084fc] group-hover:text-white transition-colors flex-shrink-0 print:text-black" />
                 </div>
@@ -290,7 +290,7 @@ export default function CompanyProfilePage() {
                 </div>
                 <div>
                   <p className="text-[10px] md:text-xs print:text-xs uppercase tracking-widest text-white/50 group-hover:text-[#c084fc]/80 print:text-gray-500 mb-1 transition-colors">WhatsApp / Telepon</p>
-                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">+62 811 2233 4455</p>
+                  <p className="font-bold text-sm md:text-base print:text-base text-white print:text-black">+62 857 9346 8966</p>
                 </div>
               </a>
 

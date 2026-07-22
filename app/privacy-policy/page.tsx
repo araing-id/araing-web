@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">6. Hubungi Kami</h2>
             <p className="leading-relaxed">
-              Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini atau pengelolaan data pribadi Anda, jangan ragu untuk menghubungi kami melalui <strong>contact@araing.id</strong>.
+              Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini atau pengelolaan data pribadi Anda, jangan ragu untuk menghubungi kami melalui <strong>info@araing.id</strong>.
             </p>
           </section>
         </div>
