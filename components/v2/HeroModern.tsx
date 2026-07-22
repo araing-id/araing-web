@@ -40,7 +40,7 @@ export default function HeroModern() {
             {/* The main striking typography */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none tracking-tighter">
               Arus Liar<br />
-              <span className="font-serif italic font-medium text-white/90">Inisiatif Group</span>
+              <span className="font-serif italic font-medium text-white/90">Inisiatif Grup</span>
             </h1>
           </motion.div>
 
