@@ -70,7 +70,7 @@ export default function HeroModern() {
           </a>
           
           <a 
-            href="/portofolio"
+            href="/projects"
             className="group/btn px-8 py-3 rounded-full border border-white/30 text-white font-semibold text-sm hover:bg-white/10 transition-colors flex items-center justify-center w-full sm:w-auto gap-2"
           >
             Lihat Proyek
