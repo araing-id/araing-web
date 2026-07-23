@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function RoadmapModern() {
   const milestones = [
-    { year: "Q1 2026", title: "Inisiasi & Konsolidasi", desc: "Pembentukan pondasi organisasi, legalitas, dan penghimpunan talenta kunci.", active: true },
-    { year: "Q2 2026", title: "Peluncuran Portofolio", desc: "Rilis proyek-proyek perdana dari 5 pilar sektor, menetapkan standar kualitas.", active: true },
-    { year: "Q3 2026", title: "Ekspansi Ekosistem", desc: "Membuka kolaborasi dengan mitra eksternal & program dampak sosial regional.", active: false },
-    { year: "Q4 2026", title: "Dominasi Sektoral", desc: "Memimpin pasar konversi sambil membuktikan rekam jejak sosial.", active: false }
+    { year: "Q3 2026", title: "Pembentukan & Pilot Project", desc: "Pembentukan pondasi organisasi, penghimpunan talenta kunci, dan peluncuran proyek perdana.", active: true },
+    { year: "Q4 2026", title: "Konsolidasi Strategis", desc: "Fokus pada penguatan strategi jangka panjang, tata kelola, dan kemitraan kunci.", active: false },
+    { year: "Q1 2027", title: "Ekspansi Ekosistem", desc: "Membuka kolaborasi lintas sektor & menggalang permodalan strategis ekosistem.", active: false },
+    { year: "Q2 2027", title: "Dominasi Sektoral", desc: "Memimpin pasar secara berkelanjutan dan membuktikan dampak sosial nyata.", active: false }
   ];
 
   return (
