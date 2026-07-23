@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Arus Liar Inisiatif Grup - araing.id",
-  description: "Arus Liar Inisiatif Grup (araing.id) adalah ekosistem kolaboratif multi-sektor yang berfokus pada dampak sosial dan keunggulan komersial.",
+  description: "Arus Liar Inisiatif Grup lahir sebagai wujud transformasi kolektif—menyatukan ikatan persaudaraan dengan standar tata kelola profesional demi melahirkan karya bernilai luhur dan dampak sosial yang nyata bagi masyarakat.",
   openGraph: {
     title: "Arus Liar Inisiatif Grup - araing.id",
-    description: "Ekosistem kolaboratif multi-sektor yang berfokus pada dampak sosial dan keunggulan komersial.",
+    description: "Arus Liar Inisiatif Grup lahir sebagai wujud transformasi kolektif—menyatukan ikatan persaudaraan dengan standar tata kelola profesional demi melahirkan karya bernilai luhur dan dampak sosial yang nyata bagi masyarakat.",
     url: "https://araing.id",
     siteName: "Arus Liar Inisiatif Grup",
     images: [
@@ -30,12 +30,6 @@ export const metadata: Metadata = {
     ],
     locale: "id_ID",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Arus Liar Inisiatif Grup",
-    description: "Ekosistem kolaboratif multi-sektor yang berfokus pada dampak sosial dan keunggulan komersial.",
-    images: ["/og-image.png"],
   },
   icons: {
     icon: "/logo-araing.svg",

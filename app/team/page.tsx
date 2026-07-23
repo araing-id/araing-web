@@ -1,38 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { teamMembers, getInitials } from "@/lib/data/team";
+import Link from "next/link";
 
 export default function TeamPage() {
-  const teamMembers = [
-    { name: "Priyambodo Pujo Sulaksono", role: "CEO", imgUrl: null },
-    { name: "Hafizh Alief Alamsyah", role: "COO", imgUrl: null },
-    { name: "Salsabilla Adfanisa", role: "CFO", imgUrl: null },
-    { name: "Shabila Pridadindya", role: "CSO", imgUrl: null },
-    { name: "Bella Wyndara", role: "CMO", imgUrl: null },
-    { name: "Ferdiansyah Nugraha", role: "CTO", imgUrl: null },
-    { name: "Decky Firmansyah", role: "Commissioner", imgUrl: null },
-    { name: "Putri Dwi Lestari", role: "Head of Digital Media", imgUrl: null },
-    { name: "Restu Tidar Nugraha", role: "Head of Tech-X", imgUrl: null },
-    { name: "Riskie Septiani", role: "Head of Healthcare", imgUrl: null },
-    { name: "Fariq Irham", role: "Head of Infrastructure", imgUrl: null },
-    { name: "Gina Dwi Cahyani", role: "Head of Legal Advisory", imgUrl: null },
-    { name: "Iyarra Herlan Nugraha", role: "Secretary", imgUrl: null },
-    { name: "Denny Rizky", role: "Member", imgUrl: null },
-    { name: "Naufal Fausta (Uta)", role: "Member", imgUrl: null },
-    { name: "Husni Siddiq Rijaldi", role: "Member", imgUrl: null },
-    { name: "M Rizky Hidayatulloh", role: "Member", imgUrl: null },
-    { name: "Renald Alfarish", role: "Member", imgUrl: null }
-  ];
-
-  const getInitials = (name: string) => {
-    return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
-  };
-
   return (
     <div className="min-h-screen bg-[#111111] text-white selection:bg-[#c084fc]/30 selection:text-purple-200">
       <Navbar />
       
-      <main className="container mx-auto px-4 py-32 max-w-7xl">
-        <div className="mb-16 text-center">
+      <main className="container mx-auto px-4 pt-24 pb-16 md:py-32 max-w-7xl">
+        <div className="mb-12 md:mb-16 text-center">
           <h1 className="text-4xl md:text-6xl font-black text-white italic uppercase tracking-tighter mb-4">
             Meet The Team
           </h1>
@@ -43,7 +20,11 @@ export default function TeamPage() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
           {teamMembers.map((member, idx) => (
-            <div key={idx} className="group relative overflow-hidden rounded-2xl bg-[#1A1A1A] border border-white/5 aspect-[3/4] cursor-pointer">
+            <Link 
+              href={`/team/${member.id}`} 
+              key={idx} 
+              className="group relative overflow-hidden rounded-2xl bg-[#1A1A1A] border border-white/5 aspect-[3/4] cursor-pointer block"
+            >
               
               {/* Photo or Premium Placeholder */}
               {member.imgUrl ? (
@@ -76,11 +57,11 @@ export default function TeamPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               {/* Text Info */}
-              <div className="absolute bottom-0 left-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute bottom-0 left-0 p-4 translate-y-2 group-hover:translate-y-0 transition-transform duration-300 w-full">
                 <h3 className="font-bold text-white text-sm md:text-base leading-tight mb-1">{member.name}</h3>
                 <p className="text-xs text-[#c084fc] font-medium tracking-wide uppercase">{member.role}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </main>

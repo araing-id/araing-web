@@ -19,7 +19,7 @@ export default function PillarsModern() {
 
       <div className="mb-8 relative z-10">
         <h2 className="text-3xl md:text-4xl font-black text-white italic uppercase tracking-tighter mb-4">
-          5 Pilar <br/> Organisasi
+          Pilar <br/> Organisasi
         </h2>
         <p className="text-white/50 text-sm">
           Pondasi utama yang menopang setiap pergerakan kami.

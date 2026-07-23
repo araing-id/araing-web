@@ -2,35 +2,11 @@
 
 import { Printer, ArrowLeft, Mail, MapPin, Phone, Globe } from "lucide-react";
 import Link from "next/link";
+import { teamMembers, getInitials } from "@/lib/data/team";
 
 export default function CompanyProfilePage() {
   const handlePrint = () => {
     window.print();
-  };
-
-  const teamMembers = [
-    { name: "Priyambodo Pujo Sulaksono", role: "CEO", imgUrl: null },
-    { name: "Hafizh Alief Alamsyah", role: "COO", imgUrl: null },
-    { name: "Salsabilla Adfanisa", role: "CFO", imgUrl: null },
-    { name: "Shabila Pridadindya", role: "CSO", imgUrl: null },
-    { name: "Bella Wyndara", role: "CMO", imgUrl: null },
-    { name: "Ferdiansyah Nugraha", role: "CTO", imgUrl: null },
-    { name: "Decky Firmansyah", role: "Commissioner", imgUrl: null },
-    { name: "Putri Dwi Lestari", role: "Head of Digital Media", imgUrl: null },
-    { name: "Restu Tidar Nugraha", role: "Head of Tech-X", imgUrl: null },
-    { name: "Riskie Septiani", role: "Head of Healthcare", imgUrl: null },
-    { name: "Fariq Irham", role: "Head of Infrastructure", imgUrl: null },
-    { name: "Gina Dwi Cahyani", role: "Head of Legal Advisory", imgUrl: null },
-    { name: "Iyarra Herlan Nugraha", role: "Secretary", imgUrl: null },
-    { name: "Denny Rizky", role: "Member", imgUrl: null },
-    { name: "Naufal Fausta (Uta)", role: "Member", imgUrl: null },
-    { name: "Husni Siddiq Rijaldi", role: "Member", imgUrl: null },
-    { name: "M Rizky Hidayatulloh", role: "Member", imgUrl: null },
-    { name: "Renald Alfarish", role: "Member", imgUrl: null }
-  ];
-
-  const getInitials = (name: string) => {
-    return name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
   };
 
   const portfolios = [
@@ -86,7 +62,7 @@ export default function CompanyProfilePage() {
           <div className="mt-auto mb-12">
             <h3 className="text-base md:text-lg print:text-lg font-bold uppercase tracking-widest text-[#c084fc] mb-4 print:text-black">Mukadimah</h3>
             <p className="text-sm text-white/70 leading-relaxed text-justify print:text-gray-700">
-              Menyadari sepenuhnya bahwa potensi kreativitas, solidaritas, dan kompetensi teknis yang lahir dari dinamika sosial merupakan modal dasar yang tak ternilai, maka diperlukan sebuah wadah yang terstruktur, profesional, dan memiliki landasan hukum yang kuat. Wadah ini bertransformasi dari sekadar lingkaran pertemanan menjadi sebuah entitas bisnis komersial yang menjunjung tinggi nilai-nilai profesionalisme tanpa sedikit pun menanggalkan semangat persaudaraan. Atas dasar kesepakatan bersama, disusunlah Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) Arus Liar Inisiatif Grup sebagai pedoman fundamental, arah strategis, serta solusi resolusi dalam setiap dinamika organisasi.
+              Didorong oleh besarnya potensi kreativitas, kompetensi teknis, serta kuatnya semangat kebersamaan, terwujudlah sebuah urgensi untuk mendirikan wadah yang sah, profesional, dan berjangka panjang. Arus Liar Inisiatif Grup lahir sebagai wujud transformasi kolektif—menyatukan ikatan persaudaraan dengan standar tata kelola profesional demi melahirkan karya bernilai luhur. Anggaran Dasar dan Anggaran Rumah Tangga (AD/ART) ini dirumuskan sebagai landasan pijak, kompas penentu arah, sekaligus fondasi utama dalam merawat integritas dan keselarasan organisasi.
             </p>
           </div>
           
@@ -102,7 +78,7 @@ export default function CompanyProfilePage() {
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">01. Tentang Kami</h2>
             <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Arah Perusahaan</h3>
             <p className="text-sm md:text-base print:text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
-              Arah strategis perusahaan adalah bertransformasi menjadi holding company berskala nasional yang menaungi berbagai subsidiaries (anak perusahaan) di berbagai sektor. Perusahaan bertindak sebagai inkubator ide, penyedia modal, dan akselerator bisnis yang memastikan setiap sektor beroperasi secara mandiri, menguntungkan, dan memberikan dampak sosial positif bagi masyarakat Cimahi dan Indonesia.
+              Secara strategis, perusahaan berorientasi untuk bertransformasi menjadi induk usaha (holding company) berskala nasional yang membawahi beragam entitas anak (subsidiaries) di berbagai sektor strategis. Perusahaan memosisikan diri sebagai inkubator inovasi, fasilitator sekaligus penggalang permodalan strategis, dan akselerator bisnis yang menjamin setiap entitas mampu beroperasi secara mandiri, berkelanjutan, serta menghadirkan kontribusi sosial yang nyata bagi masyarakat Indonesia.
             </p>
           </div>
 
@@ -110,16 +86,16 @@ export default function CompanyProfilePage() {
             <h2 className="text-xs font-bold text-[#c084fc] uppercase tracking-widest mb-2 print:text-gray-500">02. Landasan Filosofis</h2>
             <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Visi</h3>
             <p className="text-sm md:text-base print:text-base text-white/70 leading-relaxed text-justify print:text-gray-700">
-              Menjadi perusahaan induk dan ekosistem kolaboratif lintas sektor terkemuka yang tidak hanya mendominasi konversi pasar, tetapi juga memastikan setiap anggotanya mencapai puncak kesuksesan finansial dan keahlian profesi. Hal ini bertujuan untuk mewariskan rekam jejak (legacy) serta dampak sosial yang konkret bagi kemajuan peradaban masyarakat, baik di dunia nyata maupun ranah digital.
+              Menjadi induk perusahaan sekaligus ekosistem kolaborasi lintas sektor terkemuka yang memimpin pasar, memacu eskalasi finansial dan kapabilitas profesional secara berkesinambungan, serta menorehkan warisan (legacy) yang bermakna dan berdampak positif bagi peradaban masyarakat, baik di dunia fisik maupun digital.
             </p>
           </div>
 
           <div className="mb-8">
             <h3 className="text-2xl md:text-3xl print:text-3xl font-black uppercase tracking-tighter mb-4 text-white print:text-black">Misi</h3>
             <ul className="list-decimal pl-5 space-y-2 md:space-y-3 print:space-y-3 text-sm md:text-base print:text-base text-white/70 text-justify print:text-gray-700">
-              <li>Membangun dan mengembangkan portofolio karya berstandar industri tinggi di masing-masing sektor keahlian anggota.</li>
-              <li>Melakukan penetrasi dan invasi pasar secara terukur dan strategis, dengan menyeimbangkan nilai komersial (profitabilitas) dan kebermanfaatan sosial (dampak).</li>
-              <li>Menerapkan tata kelola kelembagaan yang transparan, terstruktur, adaptif, dan bervaluasi tinggi untuk menjamin kemandirian finansial seluruh anggota.</li>
+              <li>Mengembangkan karya dan menghadirkan solusi inovatif dengan standar industri yang tinggi di setiap unit kegiatan organisasi.</li>
+              <li>Menjalankan penetrasi pasar melalui strategi yang terukur, dengan menjaga keseimbangan antara keberlanjutan ekonomi dan perluasan manfaat bagi masyarakat.</li>
+              <li>Menerapkan tata kelola lembaga yang transparan, terstruktur, akuntabel, adaptif, dan berintegritas untuk mewujudkan kemandirian ekosistem bersama.</li>
             </ul>
           </div>
 

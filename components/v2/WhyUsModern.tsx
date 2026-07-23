@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function WhyUsModern() {
   const missions = [
-    { title: "PORTFOLIO & STANDAR TINGGI", desc: "Membangun portofolio karya berstandar industri di tiap sektor keahlian." },
-    { title: "KOMERSIAL & SOSIAL", desc: "Penetrasi pasar yang menyeimbangkan profitabilitas dan kebermanfaatan sosial." },
-    { title: "TATA KELOLA ADAPTIF", desc: "Transparan, terstruktur, bervaluasi tinggi untuk menjamin kemandirian anggota." }
+    { title: "KARYA & SOLUSI INOVATIF", desc: "Mengembangkan karya dan menghadirkan solusi inovatif dengan standar industri tinggi." },
+    { title: "PENETRASI PASAR TERUKUR", desc: "Menjaga keseimbangan antara keberlanjutan ekonomi dan perluasan manfaat masyarakat." },
+    { title: "TATA KELOLA BERINTEGRITAS", desc: "Transparan, akuntabel, adaptif untuk kemandirian ekosistem bersama." }
   ];
 
   return (
@@ -15,15 +15,13 @@ export default function WhyUsModern() {
       <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-[#c084fc]/10 blur-[80px] rounded-full pointer-events-none"></div>
 
       <div>
-        <p className="text-[#c084fc] text-sm uppercase tracking-widest font-semibold mb-2">Visi & Misi</p>
         <h2 className="text-3xl md:text-4xl font-black text-white italic uppercase tracking-tighter mb-6">
           Why You Should<br />
           <span className="text-[#c084fc]">Work With Us</span>
         </h2>
         
         <p className="text-white/60 text-sm md:text-base leading-relaxed mb-8">
-          Menjadi ekosistem kolaboratif lintas sektor yang mendominasi konversi pasar, 
-          memastikan setiap anggota mencapai puncak kesuksesan, dan mewariskan rekam jejak untuk kemajuan peradaban.
+          Ekosistem kolaborasi lintas sektor yang memacu eskalasi finansial berkelanjutan sekaligus menorehkan <strong className="text-white font-bold">dampak sosial nyata</strong> bagi peradaban.
         </p>
       </div>
 
